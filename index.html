@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en-us">
+
+	<head>
+
+		<meta charset="UTF-8">
+    <title>Crystal Collector</title>
+    
+		<!-- Link to Google Fonts -->
+		<link href="https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Playfair+Display+SC|Spectral+SC&display=swap" rel="stylesheet">
+		<!-- Link to CSS Reset -->
+    <link rel="stylesheet" href="assets/css/reset.css">
+    <!-- Link to Bootstrap CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Link to CSS Stylesheet -->
+    <link rel="stylesheet" href="assets/css/style.css">
+    <!-- Link to Bootstrap Javascript CDN -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+    <!-- Link to jQuery CDN -->
+		<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<!-- Link to Javascript Logic -->
+		<script type="text/javascript" src="assets/javascript/game.js"></script>
+    
+  </head>
+  
+  <body>
+    <!-- Fluid Container -->
+    <div class="container-fluid">
+      
+      <!-- Header -->
+      <div class="row">
+        <div class="col-sm-12">
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
+            <a class="navbar-brand">Crystal Collector</a>
+          </nav>
+        </div>
+      </div>
+    </div>
+    <!-- End of Fluid Container -->
+    
+    <hr>
+
+    <!-- Main Container -->
+    <div class="container-main-game">
+
+      <!-- Game Directions -->
+      <div class="container directions"> 
+        <div id="game-directions">
+          <p>
+            You will be given a random number at the start of the game.
+          </p>
+          <p>
+            There are four crystals below. By clicking on a crystal you will ad a specific amount of points to your total score.
+          </p>
+          <p>
+            You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.
+          </p>
+          <p>
+            The value of each crystal is hidden from you until you click on it.
+          </p>
+          <p>
+            Each time when the game starts, the value of the crystals will change.
+          </p>
+        </div>
+      </div>
+      
+      <!-- Random Number & Wins/Losses Divs -->
+      <div class="jumbotron jumbotron-fluid random-number justify-content-center">
+        <div class="container">
+          <!-- Holds the random number -->
+          <div class="row">
+            <div class="col-6">
+              <div id="random-number">Random Number:</div>
+            </div>
+          </div>
+          <!-- Holds the wins/losses -->
+          <div class="row">
+            <div class="col-6">
+              <div id="wins">Wins:</div>
+              <div id="losses">Losses:</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Display Crystals -->
+      <div class="jumbotron jumbotron-fluid">
+        <div class="crystals">
+          <div id="display-crystals"></div>
+        </div>
+      </div>
+
+      <!-- Player's Total Score -->
+      <div class="jumbotron jumbotron-fluid total-score">
+        <div class="container">
+          <div id="players-score">Total Score:</div>
+        </div>
+      </div>
+    <!-- End of Main Container -->
+
+    </div>    
+  </body>
+</html>
