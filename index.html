@@ -7,7 +7,7 @@
     <title>Crystal Collector</title>
     
 		<!-- Link to Google Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Cinzel|Cinzel+Decorative|Playfair+Display+SC|Spectral+SC&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Slabo+27px|Vollkorn+SC&display=swap" rel="stylesheet">
 		<!-- Link to CSS Reset -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <!-- Link to Bootstrap CDN -->
@@ -43,29 +43,19 @@
     <hr>
 
     <!-- Main Container -->
-    <div class="container-main-game">
+    <div class="container">
 
       <!-- Game Directions -->
-      <div class="card">
+      <div class="card justify-content-center">
         <div class="card-header">Directions</div>
         <div class="card-body">
-          <blockquote class="blockquote mb-0">
-            <p>
-              You will be given a random number at the start of the game.
-            </p>
-            <p>
-              There are four crystals below. By clicking on a crystal you will ad a specific amount of points to your total score.
-            </p>
-            <p>
-              You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.
-            </p>
-            <p>
-              The value of each crystal is hidden from you until you click on it.
-            </p>
-            <p>
-              Each time when the game starts, the value of the crystals will change.
-            </p>
-          </blockquote>
+          <p>
+            You will be given a random number at the start of the game.
+            There are four gems below. By clicking on a gem you will ad a specific amount of points to your total score.
+            You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.
+            The value of each gem is hidden from you until you click on it.
+            Each time when the game starts, the value of the gems will change.
+          </p>
         </div>
       </div>
       
@@ -94,10 +84,10 @@
         </div>
       </div>
 
-      <!-- Display Crystals -->
+      <!-- Display Gems -->
       <div class="card">
         <div class="card-body">
-          <div id="crystal-display"></div>
+          <div id="gem-display"></div>
         </div>
       </div>
 

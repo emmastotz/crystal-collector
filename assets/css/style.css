@@ -1,0 +1,15 @@
+body {
+  font-family: 'Vollkorn SC', serif;
+  /* background-image: url("../images/got.jpeg"); */
+  text-align: center;
+}
+
+img {
+  width: 15%;
+  height: auto;
+  /* margin-right: 2%; */
+}
+
+nav.navbar {
+  color: white;
+}
