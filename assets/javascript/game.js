@@ -9,8 +9,10 @@ $(document).ready(function(){
   // FUNCTIONS ===========================================================
   //Restart Function
   var restart = function(){
+    playerScore = 0;
     $("#total-score").empty();
     $("#gem-display").empty();
+    play();
   }
   
   // Random Number to Match Function
@@ -26,9 +28,9 @@ $(document).ready(function(){
   var setGemNumber = function(){
     for (i = 0; i < 4; i++){
       randomGemNumber = Math.floor(Math.random() * 12 + 1);
-
+      //Gem images in an array.
       var gemImage = ["assets/images/gems_01.png","assets/images/gems_02.png","assets/images/gems_03.png","assets/images/gems_04.png"];
-
+      //
       var gem = $("<img>");
 
       gem.attr({
@@ -52,7 +54,7 @@ $(document).ready(function(){
   var checkScore = function (){
     //Winning Condition
     if (playerScore == randomNumber){
-      win++;
+      wins++;
       alert("You win!");
       $("#wins").text("Wins: " + wins);
       restart();
@@ -66,7 +68,8 @@ $(document).ready(function(){
     }
   }
 
-  //BEGIN GAME ===========================================================
+  //Play Function
+  var play = function(){
     randomNumber = setRandomNumber();
     randomGemNum = setGemNumber();
     $("#wins").text("Wins: " + wins);
@@ -76,5 +79,22 @@ $(document).ready(function(){
     $(".gem-image").on("click", function() {
       updatePlayerScore($(this));
       checkScore();
-    }); 
+    });
+
+    //Replay Feature
+    if (userPlay == false){
+      var userReplay = confirm("Let's play again!")
+      return userReplay;
+    }
+  }
+
+  //BEGIN GAME ===========================================================
+  var userPlay = confirm("Do you want to play a game of Gem Collector?");
+    if ((userPlay == true) || (userReplay == true)) {
+      
+      play();
+      userPlay = false;
+
+    }
+     
   });
