@@ -46,36 +46,45 @@
     <div class="container-main-game">
 
       <!-- Game Directions -->
-      <div class="container directions"> 
-        <div id="game-directions">
-          <p>
-            You will be given a random number at the start of the game.
-          </p>
-          <p>
-            There are four crystals below. By clicking on a crystal you will ad a specific amount of points to your total score.
-          </p>
-          <p>
-            You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.
-          </p>
-          <p>
-            The value of each crystal is hidden from you until you click on it.
-          </p>
-          <p>
-            Each time when the game starts, the value of the crystals will change.
-          </p>
+      <div class="card">
+        <div class="card-header">Directions</div>
+        <div class="card-body">
+          <blockquote class="blockquote mb-0">
+            <p>
+              You will be given a random number at the start of the game.
+            </p>
+            <p>
+              There are four crystals below. By clicking on a crystal you will ad a specific amount of points to your total score.
+            </p>
+            <p>
+              You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number.
+            </p>
+            <p>
+              The value of each crystal is hidden from you until you click on it.
+            </p>
+            <p>
+              Each time when the game starts, the value of the crystals will change.
+            </p>
+          </blockquote>
         </div>
       </div>
       
       <!-- Random Number & Wins/Losses Divs -->
-      <div class="jumbotron jumbotron-fluid random-number justify-content-center">
-        <div class="container">
-          <!-- Holds the random number -->
+      <div class="card">
+        <div class="card-header">Random Number</div>
+        <div class="card-body">
           <div class="row">
             <div class="col-6">
-              <div id="random-number">Random Number:</div>
+              <div id="random-number">###</div>
             </div>
           </div>
-          <!-- Holds the wins/losses -->
+        </div>
+      </div>
+
+      <!-- Holds the wins/losses -->
+      <div class="card">
+        <div class="card-header">Stats</div>
+        <div class="card-body">
           <div class="row">
             <div class="col-6">
               <div id="wins">Wins:</div>
@@ -86,16 +95,17 @@
       </div>
 
       <!-- Display Crystals -->
-      <div class="jumbotron jumbotron-fluid">
-        <div class="crystals">
-          <div id="display-crystals"></div>
+      <div class="card">
+        <div class="card-body">
+          <div id="crystal-display"></div>
         </div>
       </div>
 
       <!-- Player's Total Score -->
-      <div class="jumbotron jumbotron-fluid total-score">
-        <div class="container">
-          <div id="players-score">Total Score:</div>
+      <div class="card">
+        <div class="card-header">Total Score</div>
+        <div class="card-body">
+          <div id="total-score"></div>
         </div>
       </div>
     <!-- End of Main Container -->
