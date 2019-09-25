@@ -4,10 +4,10 @@
 	<head>
 
 		<meta charset="UTF-8">
-    <title>Crystal Collector</title>
+    <title>Gem Collector</title>
     
 		<!-- Link to Google Fonts -->
-		<link href="https://fonts.googleapis.com/css?family=Slabo+27px|Vollkorn+SC&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css?family=Montserrat&display=swap" rel="stylesheet">
 		<!-- Link to CSS Reset -->
     <link rel="stylesheet" href="assets/css/reset.css">
     <!-- Link to Bootstrap CDN -->
@@ -32,73 +32,74 @@
       <!-- Header -->
       <div class="row">
         <div class="col-sm-12">
-          <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center">
-            <a class="navbar-brand">Crystal Collector</a>
+          <nav class="navbar navbar-expand-lg navbar-dark bg-dark justify-content-center" style="background-color: transparent;">
+            <a class="navbar-brand">GEM COLLECTOR</a>
           </nav>
         </div>
       </div>
     </div>
     <!-- End of Fluid Container -->
-    
-    <hr>
+  
+    <br>
 
     <!-- Main Container -->
     <div class="container">
 
       <!-- Game Directions -->
-      <div class="card justify-content-center">
-        <div class="card-header">Directions</div>
-        <div class="card-body">
-          <p>
-            You will be given a random number at the start of the game. <br>
-            There are four gems below. By clicking on a gem you will ad a specific amount of points to your total score. <br>
-            You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number. <br>
-            The value of each gem is hidden from you until you click on it. <br>
-            Each time when the game starts, the value of the gems will change. <br>
-          </p>
+      <div class="row">
+        <div class="col-lg-2"></div>
+        <div class="col-lg-8">
+          <div class="card">
+            <div class="card-header">DIRECTIONS</div>
+            <div class="card-body">
+                You will be given a random number at the start of the game. There are four gems below. By clicking on a gem you will ad a specific amount of points to your total score. You win the game by matching your total score to the random number. You lose the game if your total score goes above the random number. The value of each gem is hidden from you until you click on it. Each time when the game starts, the value of the gems will change.
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-2"></div>
+      </div>
+      
+      
+      <!-- Random Number & Wins/Losses & Stats Divs -->
+      <div class="container">
+        <div class="row">
+          <div class="col-4">
+            <div class="card-header">RANDOM NUMBER</div>
+            <div class="card">
+              <div class="card-body">
+                <div id="random-number"></div>
+                <div id="blank"> </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card-header">STATS</div>
+            <div class="card">
+              <div class="card-body">
+                <div id="wins">Wins:</div>
+                <div id="losses">Losses:</div>
+              </div>
+            </div>
+          </div>
+          <div class="col-4">
+            <div class="card-header">TOTAL SCORE</div>
+            <div class="card">
+              <div class="card-body">
+                <div id="total-score"></div>
+                <div id="blank"> </div>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
       
-      <!-- Random Number & Wins/Losses Divs -->
-      <div class="card">
-        <div class="card-header">Random Number</div>
-        <div class="card-body">
-          <div class="row">
-            <div class="col-6">
-              <div id="random-number">###</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <!-- Holds the wins/losses -->
-      <div class="card">
-        <div class="card-header">Stats</div>
-        <div class="card-body">
-          <div class="row">
-            <div class="col-6">
-              <div id="wins">Wins:</div>
-              <div id="losses">Losses:</div>
-            </div>
-          </div>
-        </div>
-      </div>
-
+      <br>
       <!-- Display Gems -->
       <div class="card">
         <div class="card-body">
           <div id="gem-display"></div>
         </div>
       </div>
-
-      <!-- Player's Total Score -->
-      <div class="card">
-        <div class="card-header">Total Score</div>
-        <div class="card-body">
-          <div id="total-score"></div>
-        </div>
-      </div>
-    <!-- End of Main Container -->
 
     </div>    
   </body>

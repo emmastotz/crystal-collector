@@ -1,15 +1,28 @@
 body {
-  font-family: 'Vollkorn SC', serif;
-  /* background-image: url("../images/got.jpeg"); */
+  font-family: 'Montserrat', sans-serif;
   text-align: center;
+  background-image: url(../images/cave-01.png);
+  background-size: cover;
+  color: white;
+}
+
+div.card {
+  background-color: transparent;
 }
 
 img {
   width: 15%;
   height: auto;
-  /* margin-right: 2%; */
 }
 
 nav.navbar {
-  color: white;
+  color: white; 
+  background-color: transparent;
+}
+
+@media screen and (max-width: 1024px){
+  img {
+    width: 25%;
+    height: auto;
+  }
 }
